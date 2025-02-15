@@ -115,15 +115,25 @@
             <a
               href="index.html"
               class="d-flex align-items-center header-logo-box"
+              style="transform: translateX(-95%)"
             >
               <img
                 src="assets/media/logo1.png"
-                alt="/logo"
+                alt="logo"
                 class="header-logo"
                 height="70px"
                 width="70px"
               />
             </a>
+
+            <style>
+              @media (max-width: 768px) {
+                .header-logo-box {
+                  position: static !important;
+                  transform: none !important;
+                }
+              }
+            </style>
             <div class="main-menu__right">
               <!-- <div
                 class="header-icons d-sm-flex d-none align-items-center gap-16"
