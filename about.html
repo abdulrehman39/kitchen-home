@@ -118,14 +118,26 @@
             <a
               href="index.html"
               class="d-flex align-items-center header-logo-box"
+              style="transform: translateX(-95%)"
             >
               <img
-                src="assets/media/logo.png"
-                alt="/logo"
+                src="assets/media/logo1.png"
+                alt="logo"
                 class="header-logo"
-                style="height: 1px"
+                height="70px"
+                width="70px"
               />
             </a>
+
+            <style>
+              @media (max-width: 768px) {
+                .header-logo-box {
+                  position: static !important;
+                  transform: none !important;
+                }
+              }
+            </style>
+
             <div class="main-menu__right">
               <!-- <div
                 class="header-icons d-sm-flex d-none align-items-center gap-16"
@@ -184,21 +196,13 @@
       <!-- HEADER MENU END -->
 
       <!-- TITLE BANNER START -->
-      <section class="title-banner mb-80">
-        <div class="container-fluid-2">
+      <section
+        class="title-banner mb-80 d-flex align-items-center justify-content-center"
+        style="min-height: 50vh"
+      >
+        <div class="container-fluid-2 text-center">
           <div class="title-wrapper">
-            <div class="row align-items-center">
-              <div class="col-lg-6 col-sm-6">
-                <div class="title-content">
-                  <h1 class="medium-black fw-600">About Us</h1>
-                </div>
-              </div>
-              <div class="col-lg-6 col-sm-6 d-sm-block d-none">
-                <div class="title-image text-end">
-                  <img src="assets/media/backgrounds/banner-image.png" alt="" />
-                </div>
-              </div>
-            </div>
+            <h1 class="medium-black fw-600">About Us</h1>
           </div>
         </div>
       </section>
@@ -233,7 +237,7 @@
                   Thisaton Vestibulum ut aliquet risus. In hac habitasse
                   plateajoa dictums
                 </p>
-                <div class="review-label">
+                <!-- <div class="review-label">
                   <p class="mb-4p">
                     Based on
                     <span class="fw-700 color-sec"> 20,921 reviews </span>
@@ -241,7 +245,7 @@
                   <p class="fw-600 medium-black text-uppercase">
                     <i class="fa-solid fa-star color-sec"></i>&nbsp;Trust pilot
                   </p>
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="col-xl-4 col-lg-6 col-md-6">
@@ -260,7 +264,7 @@
                     <span class="circle"></span>
                   </a>
                 </div>
-                <div class="block-2">
+                <!-- <div class="block-2">
                   <div class="text-box">
                     <h5 class="fw-700 medium-black mb-8">Drop In Visits</h5>
                     <p class="fw-500 medium-black mb-16">Play this video</p>
@@ -268,7 +272,7 @@
                       <img src="assets/media/vector/play-btn.png" alt="" />
                     </a>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
